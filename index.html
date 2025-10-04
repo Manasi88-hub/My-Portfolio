@@ -4,48 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restuarant Menu</title>
+    <title>Portfolio</title>
     <style>
-        img{
-        position: relative;
-        border-radius: 1%;
-        }
-        
         body{
-            background-image: url('https://i.pinimg.com/736x/9f/20/f0/9f20f045c6a90b7d2dd0c6a6f4efa28f.jpg');
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
         h1{
-            color: azure;
-            padding-left: 290px;
-            padding-top: 55px;
+           color: rgb(104, 104, 111);
         }
-        ol{
-            color: aliceblue;
-            padding-top: 100px;
-            padding-left: 130px;
-            padding-top: 30px;
+        h2{
+           color: black;
         }
-    </style>
-    </head>
-</head><body>
-     <h1>Menu</h1>
-     <h2>
-      <ol>
-        <h2>lunch</h2>
-        <li>Pav Bhaji   ------------------------------------------80/-</li><br>
-        <li>Fried Rice  -----------------------------------------75/-</li><br>
-        <li>Noodles  --------------------------------------------90/-</li><br>
-        <li>Thali   -----------------------------------------------140/-</li><br>
-        <li>Mendu wada ------------------------------------50/-</li>
-        <h2>beverages</h2>
+        header{
+            background: linear-gradient(to right,rgb(18, 18, 19),lightblue);
+            padding: 15px;
+        }
         
-        <li>Mojito  -----------------------------------------80/-</li><br>
-        <li>Hot Chocolate  ------------------------------40/-</li><br>
-        <li>lichi soda   -------------------------------------10/-</li>
-        <h2>Dessert</h2>
-        <li>Brownie  ----------------------------------------55/-</li>
-      </ol></h2>
+        
+        nav{
+            background-color: gray;
+            text-align: right;
+        }
+        nav a{
+                 
+        }
+        .box1{
+            display: flex;
+         flex-direction: row;
+        }
+        section{
+            flex: 3;
+            background: linear-gradient(to right,lightblue,rgb(1, 1, 9));
+            margin: 0;
+           padding: 15px;
+        }
+        aside{
+            flex: 1;
+            background: linear-gradient(to left,lightblue,rgb(0, 0, 4));
+            margin: 0;
+            padding: 15px;
+        }
+        img{
+            border-radius: 50%;
+        
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="box1">
+        <section>
+            <h2>Hello !</h2>
+            <h1>Manasi Patil</h1>
+            <p>A student at Parul University.</p>
+        </section>
+        <aside>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQytc93VfA29gwZ4w1ySdWjx1CSJBM6qGG3BA&s">
+        </aside>
+    </div>
+    <div class="box2">
+        <section>
+        <h1>About</h1>
+        <p>I am Manasi patil a student at parul university. I have keen interest in technology and inovation. I am currently pursuing a degree in Btech CSE core.My goals are to enhance my codding and communication skills to build impactful solutions for future.</p>
+        </section>
+    </div>
+    <div class="box3">
+        <aside>
+        <h1>Skills</h1>
+        <img src="https://icon.icepanel.io/Technology/svg/HTML5.svg" width="80">
+        <img src="https://icon.icepanel.io/Technology/svg/C.svg" width="80">
+        </aside>
+    </div>
+    <section>
+        <h1>Projects</h1>
+        <p>
+
+        </p>
+    </section>
+    <aside>
+        <h1>Contact</h1>
+        <p>Email-Id: </p>
+    </aside>
 </body>
 </html>
